@@ -15,13 +15,19 @@ Neste endereço vai ser listado a cidade atual, temperatura e também um texto f
 ![print da tela vista no navegador mobile](http://doc.poalab.net.br/cfs/files/stepImages/R4y8SPZTEau6Gq8cZ?token=eyJhdXRoVG9rZW4iOiIifQ%3D%3D&store=stepImagesStore)
 
 O link do vídeo a seguir mostra o primeiro protótipo sem o RGB e com uns LED's de cores diferentes, estes foram substituídos no projeto final por um LED RGB.
+
 https://player.vimeo.com/video/279533558
 
 # Referências e links uteis
 
 [Programando NodeMcu com Arduino IDE](https://www.filipeflop.com/blog/programar-nodemcu-com-ide-arduino)
+
 [Biblioteca Arduino Json](https://github.com/bblanchon/ArduinoJson)
-[Biblioteca WiFiManager](https://github.com/tzapu/WiFiManager)
-[Instalação do plugin para upload do arquivo data](https://github.com/esp8266/arduino-esp8266fs-plugin) 
+
+[Biblioteca WiFiManager](https://github.com/tzapu/WiFiManager) 
+
+[Instalação do plugin para upload do arquivo data](https://github.com/esp8266/arduino-esp8266fs-plugin)
+
 [Exemplo de salvar e ler arquivos .json ](https://github.com/esp8266/Arduino/blob/master/libraries/esp8266/examples/ConfigFile/ConfigFile.ino)
-[Código encoding](https://github.com/zenmanenergy/ESP8266-Arduino-Examples/blob/master/helloWorld_urlencoded/urlencode.ino)                
+
+[Código encoding](https://github.com/zenmanenergy/ESP8266-Arduino-Examples/blob/master/helloWorld_urlencoded/urlencode.ino)          
