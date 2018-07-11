@@ -65,6 +65,7 @@ const char* city;
 String cidade;
 const char* country;
 const char* region;
+const char* condition;
 int temp;
 int code;
 const char hostname[] = "query.yahooapis.com";
@@ -131,15 +132,10 @@ String consult(){
 void startWiFi() {
   
   WiFiManager wifiManager;
+  //reseta as configuracoes wifi predefinidas
+  //wifiManager.resetSettings(); 
   wifiManager.autoConnect("AutoConnectAP");
-  
-/*
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(1000);
-    Serial.println("Conectando ao WiFi..");
-  }
-*/
+  //ip vai para o monitor da porta serial
   Serial.println(WiFi.localIP());
 }
 void setJson(String jsonWeather){
@@ -193,6 +189,7 @@ void startServer(){
   server.serveStatic("/style.css", SPIFFS, "/style.css", "max-age=86400");
   server.serveStatic("/jquery-2.1.1.min.js", SPIFFS, "/jquery-2.1.1.min.js", "max-age=86400"); 
   server.serveStatic("/materialize.min.js", SPIFFS, "/materialize.min.js", "max-age=86400");
+  //o endereco de acesso web fica o ip/mudalocal
   server.on("/mudalocal", mudalocal);
   server.on("/setalocal", setLocal);
 }
